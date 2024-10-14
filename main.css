@@ -1,0 +1,130 @@
+:root {
+    --firstcolor: #2B3844;
+    --secondcolor: #202C36;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--secondcolor);
+}
+
+.container {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--firstcolor);
+    color: white;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 30%;
+    height: 56px;
+    background-color: var(--firstcolor);
+    color: white;
+    border: none;
+    margin: 10px 0;
+    color: white;
+    padding: 0 30px;
+}
+
+.icon::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(/icon-search-white.svg);
+    position: relative;
+    bottom: 46px;
+    right: -5px;
+}
+
+.card {
+    width: 264px;
+    height: 250px;
+    background-color: var(--firstcolor);
+    color: white;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.cards {
+    display: flex;
+    gap: 10%;
+
+}
+
+.cardss {
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 769px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20%;
+    }
+
+    .head {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 23.5%;
+    }
+
+    .card {
+        width: 264px;
+        height: 250px;
+        background-color: var(--firstcolor);
+        color: white;
+        text-align: center;
+        margin-bottom: 20%;
+    }
+
+    input {
+        width: 100%;
+        height: 56px;
+        background-color: var(--firstcolor);
+        color: white;
+        border: none;
+        margin: 10px 0;
+        color: white;
+        padding: 0 30px;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .head {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+
+}
